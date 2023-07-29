@@ -1,0 +1,60 @@
+﻿<html>
+  <head>
+    <title></title>
+    <style type="text/css">
+      body {
+        font-family: Arial;
+        font-size: 10pt;
+      }
+      table {
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+      }
+      table th {
+        background-color: #f7f7f7;
+        color: #333;
+        font-weight: bold;
+      }
+      table th,
+      table td {
+        padding: 5px;
+        border-color: #ccc;
+      }
+      input[type="button"] {
+        background-color: #08f;
+        color: #fff;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript" src="DOM_Table.js"></script>
+    <form>
+      <input id="id" type="text" placeholder="Enter id" />
+      <br /><br />
+      <input id="name" type="text" placeholder="Enter name" />
+      <br /><br />
+      <input id="email" type="email" placeholder="Enter email" />
+      <br /><br />
+      <input id="city" type="text" placeholder="Enter city" />
+      <br /><br />
+      <input id="phone" type="number" placeholder="Enter phone number" />
+      <br /><br />
+      <input type="button" onclick="Add()" id="submit" value="Add" />
+      <br /><br />
+    </form>
+    <table id="tblCustomers" cellpadding="0" cellspacing="0" border="1">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>City</th>
+          <th>Phone</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </body>
+</html>

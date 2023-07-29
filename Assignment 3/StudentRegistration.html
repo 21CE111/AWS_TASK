@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title>Student Registration</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Student Registration</h1>
+      <form action="StudentRegistration.js">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" />
+        <span type="text" id="fullnameError"></span>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" />
+        <span type="text" id="usernameError"></span>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" />
+        <span type="text" id="pswError"></span>
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" />
+        <span type="text" id="CnfpswError"></span>
+
+        <label>Gender:</label>
+        <div class="gender-group">
+          <label for="male">
+            <input type="radio" name="gender" value="male" /> Male
+          </label>
+          <label for="female">
+            <input type="radio" name="gender" value="male" />
+            Female
+          </label>
+          <span type="text" id="GenderError"></span>
+        </div>
+
+        <label for="phone">Phone No:</label>
+        <input type="text" id="phone" />
+        <span type="text" id="phoneError"></span>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" />
+        <span type="text" id="emailError"></span>
+
+        <label for="state">State:</label>
+        <select id="state">
+          <option value="default">Select State</option>
+          <option value="Gujarat">Gujarat</option>
+          <option value="Maharashtra">Maharashtra</option>
+          <option value="Rajasthan">Rajasthan</option>
+        </select>
+        <span type="text" id="stateError"></span>
+        <label class="checkbox-label">
+          <input type="checkbox" id="agreement" />
+          I agree to the terms and conditions
+        </label>
+        <span type="text" id="agree"></span>
+
+        <input type="submit" class="register-btn" id="submit" />
+      </form>
+    </div>
+    <script src="StudentRegistration.js"></script>
+  </body>
+</html>

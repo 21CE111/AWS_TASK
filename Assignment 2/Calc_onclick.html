@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Operation</title>
+    <script src="Calc_onclick.js"></script>
+    <style>
+      div {
+        border: 5px solid;
+        margin-top: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <label for="value1">Enter Number 1 :</label>
+      <input type="number" name="value1" id="value1" placeholder="Number 1" />
+      <span id="valnum1"></span>
+      <br />
+      <br />
+      <label for="value2">Enter Number 2 :</label>
+      <input type="number" name="value2" id="value2" placeholder="Number 2" />
+      <span id="valnum2"></span>
+      <br />
+      <p id="result">Result :</p>
+
+      <button id="Add" onclick="Operation('add')">Add</button>
+      <button id="Sub" onclick="Operation('sub')">Subtract</button>
+      <button id="Multiply" onclick="Operation('mul')">Multiply</button>
+      <button id="Divide" onclick="Operation('div')">Divide</button>
+    </div>
+  </body>
+</html>
